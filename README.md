@@ -41,7 +41,7 @@
     }
 
 
-## Configuration
+## Configuração no projeto principal
 
         public void ConfigureServices(IServiceCollection services)
         {
