@@ -1,5 +1,10 @@
 # DM Identity Jwt
 
+* Instalação: dotnet add package DMIdentity.Jwt
+* SQL Server e futuramente MySQL.
+
+[![License](https://img.shields.io/github/license/jdouglasmendes/DMIdentity)](https://github.com/JDouglasMendes/DMIdentity/blob/master/LICENSE)
+
 ## Resposta ao logar
     public class JwtResponse
     {
@@ -11,7 +16,7 @@
         public string Email { get; set; }
     }
 
-##Parametros para Login e Registar
+## Parâmetros para Login e Register
 
     public class UserLogin
     {
@@ -40,13 +45,20 @@
         
     }
 
-
 ## Configuração no projeto principal
+*No Startup da seu projeto adicionar as configurações abaixo.* 
+*Atualizar base de dados: Update-Database*
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.ConfigToken(Configuration, builder =>
-                builder.UseSqlServer(Configuration.GetConnectionString("SuaStringConexao"), b => b.MigrationsAssembly("NomeSeuProjetoPrincipal")));            
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.ConfigToken(Configuration, builder =>
+            builder.UseSqlServer(Configuration.GetConnectionString("SuaStringConexao"), b => b.MigrationsAssembly("NomeSeuProjetoPrincipal")));            
+        
+    }
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-        }
+## Features
+* [X] Login
+* [x] Register
+* [x] SQL Server
+* [ ] Change Password
+* [ ] MySQL
