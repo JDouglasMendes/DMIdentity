@@ -77,7 +77,7 @@ namespace DMIdentity.Jwt.Controllers
 
                 if (userIdentity != null)
                 {
-                    var resultadoLogin = signInManager.PasswordSignInAsync(userIdentity, usuario.Senha, true, false); 
+                    var resultadoLogin = signInManager.PasswordSignInAsync(userIdentity, usuario.Password, true, false); 
 
                     if (resultadoLogin.Result.Succeeded)
                     {
@@ -95,7 +95,7 @@ namespace DMIdentity.Jwt.Controllers
         [HttpPost("Register")]
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Register([FromBody]User usuario,
+        public IActionResult Register([FromBody]User usuario,
                                                     [FromServices]UserManager<ApplicationUser> userManager,
                                                     [FromServices]SignInManager<ApplicationUser> signInManager,
                                                     [FromServices]SigningConfigurations signingConfigurations,
@@ -109,7 +109,7 @@ namespace DMIdentity.Jwt.Controllers
                 Email = usuario.Email,
             };
             if (EmailJaUtilizado(userManager, user)) return BadRequest(ModelState);
-            var result = userManager.CreateAsync(user, usuario.Senha).Result;
+            var result = userManager.CreateAsync(user, usuario.Password).Result;
             if (result.Succeeded) return Ok();
             result.Errors.ToList().ForEach(x => ModelState.AddModelError("Email", x.Description));
             return BadRequest(ModelState);

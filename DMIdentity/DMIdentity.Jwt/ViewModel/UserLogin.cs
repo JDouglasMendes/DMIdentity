@@ -12,6 +12,6 @@ namespace DMIdentity.Jwt.ViewModel
         [MaxLength(20, ErrorMessage = "A senha ultrapassou o tamanho limite.")]
         [MinLength(6, ErrorMessage = "Senha deve conter no mínimo 6 caracteres.")]
         [Required(ErrorMessage = "Senha deve ser informada.")]
-        public string Senha { get; set; }
+        public string Password { get; set; }
     }
 }

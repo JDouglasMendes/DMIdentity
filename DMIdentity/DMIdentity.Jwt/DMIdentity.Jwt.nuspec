@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DMIdentity.Jwt</id>
+    <version>1.0.0</version>
+    <title>DM Identity JWT</title>
+    <authors>Douglas Aleixo Mendes</authors>
+    <owners>Douglas Aleixo Mendes</owners>
+    <licenseUrl>https://github.com/JDouglasMendes/DMIdentity</licenseUrl>
+    <projectUrl>https://github.com/JDouglasMendes/DMIdentity</projectUrl>
+    <iconUrl>https://www.fabiosilvalima.com</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Identiy CORE for JWt</description>
+    <releaseNotes>First Version</releaseNotes>
+    <copyright>Douglas Aleixo Mendes</copyright>
+    <tags>C# Identity DM</tags>
+  </metadata>
+</package>

@@ -25,3 +25,15 @@ DMIdentity/DMIdentity.Jwt.Test/obj/Debug/netcoreapp2.2/DMIdentity.Jwt.Test.Assem
 DMIdentity/DMIdentity.Jwt.Test/bin/Debug/netcoreapp2.2/DMIdentity.Jwt.Test.runtimeconfig.json
 DMIdentity/DMIdentity.Jwt.Test/bin/Debug/netcoreapp2.2/DMIdentity.Jwt.Test.runtimeconfig.dev.json
 DMIdentity/DMIdentity.Jwt.Test/bin/Debug/netcoreapp2.2/DMIdentity.Jwt.Test.deps.json
+DMIdentity/DMIdentity.Jwt/obj/*
+DMIdentity/DMIdentity.Jwt.Test/obj/*
+DMIdentity/DMIdentity.Jwt/bin/*
+DMIdentity/DMIdentity.Jwt.Test/bin/*
+DMIdentity/.vs/config/applicationhost.config
+DMIdentity/.vs/config/applicationhost.config
+DMIdentity/.vs/DMIdentity/DesignTimeBuild/.dtbcache
+DMIdentity/DMIdentity.Jwt/DMIdentity.Jwt.1.0.0.nupkg
+DMIdentity/DMIdentity.Jwt/DMIdentiy.Jwt.1.0.0.nupkg
+DMIdentity/DMIdentity.Jwt/obj/project.assets.json
+DMIdentity/DMIdentity.Jwt/obj/project.assets.json
+DMIdentity/.vs/config/applicationhost.config
