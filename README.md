@@ -4,6 +4,7 @@
 * SQL Server e futuramente MySQL.
 
 [![License](https://img.shields.io/github/license/jdouglasmendes/DMIdentity)](https://github.com/JDouglasMendes/DMIdentity/blob/master/LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/JDouglasMendes/DMIdentity)
 
 ## Resposta ao logar
     public class JwtResponse
